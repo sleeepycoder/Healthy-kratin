@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Healthy-kratin/static/css/main.fbbba5cd.css",
+    "main.js": "/Healthy-kratin/static/js/main.ad24c384.js",
+    "index.html": "/Healthy-kratin/index.html",
+    "main.fbbba5cd.css.map": "/Healthy-kratin/static/css/main.fbbba5cd.css.map",
+    "main.ad24c384.js.map": "/Healthy-kratin/static/js/main.ad24c384.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbbba5cd.css",
+    "static/js/main.ad24c384.js"
+  ]
+}
