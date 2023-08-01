@@ -1,0 +1,213 @@
+/* Navbar styles */
+.navbar {
+  font-family:  Montserrat, sans-serif;;
+  background-image:  linear-gradient(to top left, #79a8bb, #614385 );;
+  background-color:grey; /* Glassy background color */
+  backdrop-filter: blur(5px); /* Glassy effect, adjust blur strength as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index:10;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Center the navbar items in the middle */
+  width: 100%; /* Add this to take the full width */
+  max-width: 1200px; /* Optional: Add a max-width to the navbar to limit its size */
+  margin: 0 auto; /* Optional: Center the navbar horizontally */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Your logo color */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+ 
+
+  /* Push the navbar items to the center */
+}
+
+.nav-links li {
+  margin-right: 20px;
+  margin-top: 20px;
+ 
+}
+
+
+
+.nav-links a { 
+  color: #ffffff;;
+
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+}
+.dropdown-menu li{
+list-style: none;
+margin-left: 10px;
+width: 150px;
+text-transform:lowercase;
+margin-left: 0.5rem;;
+
+}
+
+.dropdown-active {
+  animation: caret-is-active  300ms linear forwards;
+}
+.dropdown-inactive {
+  animation: caret-is-active  300ms linear forwards;
+}
+.dropdown-menu {
+ 
+  background-image:  linear-gradient(to top left, #79a8bb, #b36dd4, #f06699);;
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the dropdown below the user icon */
+  right: 0;
+  z-index: 5;
+  background-color: grey; /* Glassy background color for dropdown */
+  backdrop-filter: blur(50px); /* Glassy effect for dropdown, adjust blur strength as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  border:2px solid;
+  border-radius:5%;
+
+}
+/* Show dropdown menu when parent item is hovered */
+.nav-links li.dropdown:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+/* Dropdown arrow icon styles */
+.dropdown-icon {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the dropdown arrow icon when the dropdown menu is open */
+.nav-links li.dropdown.active .dropdown-icon {
+  transform: rotate(180deg);
+}
+/* Add some space between dropdown menu items */
+.dropdown-menu li {
+  margin-bottom: 10px; 
+  position: relative;/* Adjust this value to control the spacing */
+}
+
+/* Add horizontal line below each dropdown item */
+.dropdown-menu li::after {
+  content: ''; /* Required for the ::after pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc; /* Color of the line, adjust as needed */
+}
+
+.dropdown:hover .dropdown-menu {
+  display:block !important;
+ 
+}
+/* User icon styles */
+.user-icon {
+  cursor: pointer;
+}
+.user-icon-dropdown {
+  position: relative;
+
+
+}
+.user-icon-dropdown:hover .dropdown-menu {
+  display: block;
+
+}
+/* Hamburger menu icon styles */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Make the navbar responsive */
+@media (max-width: 768px) {
+  .navbar {
+    height: 50px; /* Adjust height for mobile */
+  }
+
+  .logo {
+    font-size: 20px; /* Adjust font size for mobile */
+  }
+
+  .nav-links {
+    display: none; /* Hide menu links on mobile */
+  }
+
+  .user-icon {
+   
+    margin-left: auto; /* Move the user icon to the right on mobile */
+    margin-right: 30px; /* Optional: Add some right margin for spacing */
+  }
+
+  /* Show a hamburger menu icon for mobile */
+  .navbar-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    left: 0;
+   
+    width: 100%;
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+   
+  }
+
+  .nav-links.active li {
+    margin-right: 100px;
+    margin-left:10px;
+  
+  }
+  .user-icon-dropdown ul {
+    position: relative;
+    bottom:100px;
+    width: 60%;
+    left:100px;
+  
+  
+  }
+}
