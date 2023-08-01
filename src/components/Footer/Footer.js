@@ -36,19 +36,19 @@ const Footer = () => {
                       Contact Address India:
                   </Typography>
                   <Typography variant="body2" gutterBottom>
-                      G-65, Ground Floor, Shakarpur,
+                      G-6,
                   </Typography>
                   <Typography variant="body2" gutterBottom>
                       New Delhi - 110092. INDIA
                   </Typography>
                   <Typography variant="body2" gutterBottom>
-                      Phone- 91.9350535307
+                      Phone- 8350535307
                   </Typography>
                   <Typography variant="body2" gutterBottom>
-                      Website: https://smwebsolutions.com
+                      Website: https://Healthysolutions.com
                   </Typography>
                   <Typography variant="body2" gutterBottom>
-                      Email: info@smwebsolutions.com
+                      Email: info@Healthysolutions.com
                   </Typography>
               </Grid>
 
@@ -81,7 +81,7 @@ const LastFooter = () => {
           <Grid container spacing={2} alignItems="center" justifyContent="space-between">
             <Grid item>
               <Typography variant="body2" gutterBottom>
-                © 2022 SM Web Solutions Pvt. Ltd. | All Rights Reserved.
+                © 2022 Healthy Solutions Pvt. Ltd. | All Rights Reserved.
               </Typography>
             </Grid>
             <Grid item>
